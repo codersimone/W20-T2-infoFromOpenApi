@@ -1,6 +1,6 @@
 function getFavqs() {
     fetch('https://favqs.com/api/qotd')
-    .then(response => response.json()) //ответ бека переводится в джейсон
+    .then(response => response.json())
     .then(quote => {
         document.querySelector('.quoteOfTheDay').innerText = 'Цитата дня: ' + quote.quote.body;
         document.querySelector('.authorQuoteOfTheDay').innerText = 'Автор: ' + quote.quote.author;
