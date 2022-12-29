@@ -7,6 +7,6 @@ function getFavqs() {
     })
     .catch(err => {
         console.log(err);
-        document.querySelector('div').innerText = 'Ошибка чтения текста'}); //МОЖНО УДАЛИТЬ ?!
+        document.querySelector('div').innerText = 'Ошибка чтения текста'});
 }
 getFavqs();
